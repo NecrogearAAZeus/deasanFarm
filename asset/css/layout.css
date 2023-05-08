@@ -1,0 +1,507 @@
+@font-face {
+    font-family: 'ChosunCentennial';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.wapper{
+    position:relative;
+    width:100%;
+
+}
+
+@media (max-width:768px){
+    html{
+        font-size:20px;
+        font-family:gowun-dodum, sans-serif;
+    }
+    .main{
+        position:relative;
+        height:94vh;
+        width:100%;
+        overflow:hidden ;
+        
+
+    }
+    .mobile_title_BG{
+        position:absolute;
+        top:50%;
+        left:50%;
+        z-index:1;
+        transform:translate(-50%,-50%);
+        height:100%;
+        min-width:500px;
+        width:100%;
+
+    }
+    .title_logo{
+        position:absolute;
+        top:1rem;
+        left:1rem;
+        z-index:4;
+        height:2.6rem;
+        cursor:pointer;
+
+    }
+    .moblie_button{
+        position:absolute;
+        top:1.0rem;
+        right:1rem;
+        z-index:2;
+        height:1.75rem;
+        cursor:pointer;
+    }
+    .fixed{
+        position:fixed;
+        top:0.6rem;
+        right:0.6rem;
+        height:1.75rem;
+        cursor:pointer;
+        border:10px solid #64c588;
+        background-color: #64c588;
+        border-radius:5px;
+        box-sizing: content-box;
+        z-index: 5;
+        display:none;
+    }
+    .latter{
+        position:absolute;
+        width:100%;
+        z-index:3;
+        top:25%;
+        left:50%;
+        transform: translate(-50%,0);
+        text-align:center;
+        color:#fff;
+    }
+    .box1{
+        position:absolute;
+        top:0.35rem;
+        right:2.6rem;
+        z-index: 2;
+        width:1.5rem;
+        height:1px;
+        background-color:#fff;
+        opacity: 65%;
+
+    }
+    .box2{
+        position:absolute;
+        top:0.35rem;
+        left:2.6rem;
+        z-index: 2;
+        width:1.5rem;
+        height:1px;
+        background-color:#fff;
+        opacity: 65%;
+
+    }
+    .latter1{
+        position:relative;
+        opacity: 85%;
+        font-size:0.7rem;
+        font-family: kandin, sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-weight:200;
+        width:22rem;
+        left:50%;
+        transform: translate(-50%,0);
+        letter-spacing: 0.06rem;
+    }
+    .latter2{
+        margin-top:8%;
+        font-size:1.8rem;
+        font-family: romana-tw, serif;
+    }
+
+    .sublatter2-2{
+        margin-top:5%;
+    }
+    .box3{
+        width:5rem;
+        height:0.09rem;
+        background-color: #64c588;
+        margin: 7% auto 7%;
+        opacity:90%;
+    }
+    .latter3{
+        opacity: 90%;
+        font-size:1.1rem;
+        font-family: gowun-dodum, sans-serif;
+    }
+    .sublatter3-2{
+        margin-top: 3%;
+    }
+    .icons{
+        position:absolute;
+        bottom:10%;
+        z-index: 2;
+        background-size:cover;
+        height:3rem;
+        width:100%;
+
+    }
+    .main_bottom{
+        height:100%;
+        width:100%;
+        position:relative;
+        opacity:90%;
+    }
+    .youtube{
+        position:absolute;
+        left:20%;
+        width:1.75rem;
+    }
+    .facebook{
+        position:absolute;
+        left:50%;
+        transform:translate(-50%,0);
+        width:1.75rem;
+    }
+    .instagram{
+        position:absolute;
+        right:20%;
+        width:1.75rem;
+    }
+    .sub{
+        position:relative;
+        height:105rem;
+        overflow: hidden;
+    }
+    .sub_texture{
+        position:absolute;
+        z-index: -3;
+        opacity: 50%;
+
+    }
+    .sub_title{
+        font-size:1.2rem;
+        text-align: center;
+        color:#64c588;
+        font-family: ChosunCentennial;
+        padding: 3rem 0 1.8rem;
+        line-height: 1.5em;
+
+    }
+    .sub_text{
+        width:78%;
+        margin:0 auto;
+        font-size:0.8rem;
+        line-height: 1.3rem;
+    }
+    .sub_text>.paragraph2{
+        margin:1.8rem 0 3rem;
+    }
+    .fIntro{
+        position:relative;
+        width:100%;
+        height:43rem;
+        overflow: hidden;
+    }
+    .farm1{
+        position:absolute;
+        width:93%;
+        height:20rem;
+        left:50%;
+        overflow:hidden;
+        border-radius: 20px;
+        transform:translate(-50%,0);
+
+    }
+    .farmimg1{
+        position:absolute;
+        z-index: -2;
+        right:0;
+        bottom:0;
+
+    }
+    .filter{
+        position:absolute;
+        z-index: -1;
+        width:100%;
+        height:100%;
+        background-color: #141514;
+        opacity: 30%;
+
+    }
+    .fSub_title{
+        position:absolute;
+        font-family:ChosunCentennial ;
+        font-size:2.2rem;
+        left:50%;
+        transform:translate(-50%,0);
+        top:33%;
+        color:#fff;
+    }
+    .box4{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,0);
+        width:4rem;
+        height:1px;
+        opacity: 50%;
+        background-color: #fff;
+        z-index: 2;
+    }
+    .fParagraph{
+        position:absolute;
+        left:50%;
+        transform:translate(-50%,0);
+        top:58%;
+        color:#fff;
+        width:400px;
+        text-align: center;
+        opacity: 80%;
+        font-size: 0.9rem;
+
+    }
+    .fParagraph2{
+        position:absolute;
+        left:50%;
+        transform:translate(-50%,0);
+        top:65%;
+        color:#fff;
+        width:400px;
+        text-align: center;
+        opacity: 80%;
+        font-size: 0.9rem;
+        
+    }
+    .farm2{
+        position:absolute;
+        width:93%;
+        height:20rem;
+        left:50%;
+        overflow:hidden;
+        border-radius: 20px;
+        transform:translate(-50%,0);
+        top:23rem;
+    }
+    .farmimg2{
+        position:absolute;
+        z-index: -2;
+        right:0;
+    
+    }
+    .fParagraph3{
+        color:#64c588;
+        text-align: center;
+        opacity: 80%;
+
+        margin:3rem 0 1.8rem;
+        font-family:ChosunCentennial ;
+        font-size: 2.2rem;
+        
+    }
+    .farmSocial{
+        position:relative;
+    }
+    .farm3{
+        
+        position:absolute;
+        width:93%;
+        height:20rem;
+        left:50%;
+        overflow:hidden;
+        border-radius: 20px;
+        transform:translate(-50%,0);
+        
+    }
+    .social{
+        position:absolute;
+        right:0%;
+        z-index: 2;
+    }
+    .fParagraph4{
+        color:#5d5551;
+        position: absolute;
+        z-index: 3;
+        top:26.6rem;
+        left:50%;
+        transform:translate(-50%,0);
+        width:500px;
+        text-align: center;
+    }
+    .fParagraph5{
+        color:#5d5551;
+        position: absolute;
+        z-index: 3;
+        top:28.5rem;
+        left:50%;
+        transform:translate(-50%,0);
+        width:500px;
+        text-align: center;
+        
+    }
+    .social_bottom{
+        height:100%;
+        width:100%;
+        position:relative;
+        top:28.5rem;
+        opacity:90%;
+    }
+    .footer{
+        background-color:#fff;
+        text-align: center;
+        width:100%;
+        height:20rem;
+        position:relative;
+        z-index: 4;
+        
+    }
+    .footerlogo{
+        position:absolute;
+        left:50%;
+        transform:translate(-50%,0);
+        top:11%;
+    }
+    .box5{
+        width:1px;
+        height:0.8rem;
+        background-color:#141514;
+        z-index: 3;
+        color:#141514;
+        display:inline-block;
+        margin:0 0.2rem;
+        position:relative;
+        top:-4px;
+        
+    }
+    .footer{
+        background-color:#efefef;
+    }
+    .footerfont{
+        width:470px;
+        position:absolute;
+        font-size:0.8rem;
+        line-height: 1.3rem;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,0);
+    }
+    .menu{
+        position:fixed;
+        height:100vh;
+        width:100%;
+        overflow:hidden ;
+        z-index:0;
+        
+    }
+    .headWarp{
+        position:relative;
+        width:100%;
+    }
+    .menuhead{
+        height:4.5rem;
+        background-color: #64c588;
+        width:100%;
+        position:absolute;
+        box-shadow:0px 3px 3px rgba(20,21,20,0.2);
+        z-index: 10;
+        top:-4.5rem;
+    }
+    .mobile_button2{
+        position:absolute;
+        right:1.2rem;
+        top:1.0rem;
+        height:2.0rem;
+        cursor:pointer;
+    }
+    .accordianWarp{
+        width:100%;
+        height:100vh;
+        position:relative;
+        z-index: 4;
+        display:none;
+        
+    }
+    .accordian{
+        margin-top:4.5rem;
+    }
+    .menu2{
+        display:none;
+    }
+    .menu1{
+        display:inline-block;
+        width:100%;
+        min-height:2.3rem;
+        line-height: 2.2rem;
+        position:relative;
+        color:#141514;
+        cursor:pointer;
+    }
+    .menu4{
+        display:inline-block;
+        width:100%;
+        min-height:2.3rem;
+        line-height: 2.2rem;
+        position:relative;
+        color:#141514;
+        cursor:pointer;
+    }
+    .menuBox{
+        display:inline-block;
+        width:100%;
+        min-height:2.3rem;
+        background-color:#f6faf6;
+        line-height: 2.2rem;
+        border-top:1px solid #8e978e70;
+        border-bottom:1px solid #8e978e70;
+        text-indent:1rem;
+        position:relative;
+        color:#141514;
+    }
+    .menuBottom{
+        border-bottom:2px solid #8e978e70;
+    }
+    .menu2>li{
+        width:100%;
+        height:1.4rem;
+        background-color:#ecebe8;
+        line-height: 1.4rem;
+        font-size:0.8rem;
+        text-indent:1rem;
+    }
+    .borderUp{
+        border-top:1px solid;
+        border-image:linear-gradient(to right,#c4c2bf00 0% , #c4c2bf30 25%, #c4c2bf40 50%, #c4c2bf30 75% ,#c4c2bf00 100%) 1;
+    }
+    .filter2{
+        width:100%;
+        height:164.5rem;/*JS로 높이 변경하기*/
+        background-color: #141514;
+        position: absolute;
+        z-index:-1;
+        top:0;
+        left:0;
+        opacity:30%;
+    }
+    .size1{
+        width:1rem;
+        position:absolute;
+        right:1rem;
+        top:0.6rem;
+        transform:rotate(90deg);
+        cursor:pointer;
+   
+
+    }
+    .size2{
+        width:0.8rem;
+        position:relative;
+        left:0;
+        top:-0.27rem;
+        cursor:pointer;
+  
+    }
+    .size3{
+        width:1rem;
+        position:absolute;
+        right:1rem;
+        top:0.6rem;
+        cursor:pointer;
+
+    }
+}
