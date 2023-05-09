@@ -26,25 +26,19 @@ $(document).ready(function(){
     $(".menu1").click(function(){
         $(".menu1").children('ul').stop().slideUp(300);
         $(this).children('img').css("transform","rotate(90deg)");
-        $(".menu1").children('img').attr("src","asset/images/moblie_button3.png");
+        $(".menu1").children('img').attr("src","../asset/images/moblie_button3.png");
         
         
         
 
         if($(this).children('ul').css('display')=="none"){
             $(this).children('ul').slideDown(300);
-            $(this).children('img').attr("src","asset/images/moblie_button4.png");
+            $(this).children('img').attr("src","../asset/images/moblie_button4.png");
             $(".menu1").children('img').css("transform","rotate(90deg)");
             $(this).children('img').css("transform","rotate(0deg)");
         }
     });
-    var scrollheight =  Math.max( body.scrollHeight, body.offsetHeight, 
-                        html.clientHeight, html.scrollHeight, html.offsetHeight )
-    $(window).resize(function()
-        {setTimeout(function(){
-            $("filter2").css("height")== scrollheight;
-        },300);  
-    })
+
  
 
 
@@ -59,8 +53,20 @@ $(document).ready(function(){
         }else{
             $(".fixed").fadeOut(300);
         }
+    },300);});
+    $(window).scroll(function()
+    
+    {setTimeout(function(){
+        var height1 = $(".main").outerHeight(true);
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop>height1){
+            $(".fixed").fadeIn(300);
+        }else{
+            $(".fixed").fadeOut(300);
+        }
         },100);
     });
+    
     // let timerId;
     // $(window).scroll(function() {
     //     // 타이머가 실행 중인 경우 이전 타이머를 취소합니다.
