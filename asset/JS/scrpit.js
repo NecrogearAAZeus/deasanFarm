@@ -38,6 +38,9 @@ $(document).ready(function(){
             $(this).children('img').css("transform","rotate(0deg)");
         }
     });
+    $('.menu2>a').click(function(e){
+        e.stopPropagation();
+    });
     var scrollheight =  Math.max( $(".wapper").scrollHeight, $(".wapper").offsetHeight, 
                         window.clientHeight, window.scrollHeight, window.offsetHeight )
     $(window).resize(function()

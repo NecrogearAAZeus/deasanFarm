@@ -238,10 +238,12 @@
         left:0;
         z-index: 1;
         cursor:pointer;
-        transition:all 1s;
+        transition:all 0.5s;
+        border-right:1px solid #efefef;
 
     }
     .sub_object2{
+        background-color:#efefef;
         padding:1.4rem 0 1rem;
         top:0;
         color:#5d555180;
@@ -252,19 +254,19 @@
         width:50%;
         right:0;
         cursor:pointer;
-        transition:all 1s;
+        transition:all 0.5s;
     }
     .sub_object_underbar{
         position:absolute;
-        transition:all 1s;
+        transition:all 0.5s;
         width:50%;
         left:0;
         display:inline-block;
         margin-top:3.2rem;
         top:0;
         position:absolute;
-        border-bottom:1px solid #64c588;
-        z-index:1 ;
+        border-bottom:3px solid #64c588;
+        z-index:2 ;
     }
     .fIntro{
         position:relative;
@@ -608,15 +610,25 @@
         position:absolute;
         top:33rem;
         z-index: 1;
+    
 
     }
     .farminfo2{
         width:100%;
         position:absolute;
         top:33rem;
+        z-index: 0;
 
     }
     .information1{
+        position:relative;
+        width:93%;
+        left:50%;
+        transform:translate(-50%,0);
+        
+
+    }
+    .information2{
         position:relative;
         width:93%;
         left:50%;
@@ -642,6 +654,7 @@
         
     }
     tr:last-child{
+       
         border-bottom:1px solid #ddd;
     }
     td:nth-child(2){
@@ -651,6 +664,7 @@
         font-size:0.7rem;
         padding-left:1rem;
         border-top:1px solid #ddd;
+        background-color: #fff;
     }
     tr:nth-child(4)>td:first-child{
         line-height: 10rem;

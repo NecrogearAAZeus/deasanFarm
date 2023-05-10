@@ -24,6 +24,7 @@ $(document).ready(function(){
         
     });
     $(".menu1").click(function(){
+
         $(".menu1").children('ul').stop().slideUp(300);
         $(this).children('img').css("transform","rotate(90deg)");
         $(".menu1").children('img').attr("src","../asset/images/mobile_button3.png");
@@ -38,6 +39,10 @@ $(document).ready(function(){
             $(this).children('img').css("transform","rotate(0deg)");
         }
     });
+    $('.menu2>a').click(function(e){
+        e.stopPropagation();
+    });
+
 
    var scrollheight =  Math.max( $(".wapper").scrollHeight, $(".wapper").offsetHeight, 
                         window.clientHeight, window.scrollHeight, window.offsetHeight )
@@ -75,19 +80,26 @@ $(document).ready(function(){
         }
         },100);
     });
-    
-    // let timerId;
-    // $(window).scroll(function() {
-    //     // 타이머가 실행 중인 경우 이전 타이머를 취소합니다.
-    //     clearTimeout(timerId);
-    // $(window).scroll(function()
-    // {setTimeout(function(){
-    //     console.log("test")
-    // },300);});
-    //     // 0.3초 후에 함수를 실행합니다.
-    //     timerId = setTimeout(function() {
-    //       // 여기에 실행하려는 코드를 작성합니다.
-    //       console.log("test");
-    //     }, 300);
-    //   });
+    $('.sub_object1').click(function(){
+        $('.mapBox1').css("z-index","1");
+        $('.mapBox2').css("z-index","0");
+        $('.sub_object1').css("color","#141514");
+        $('.sub_object2').css("color","#5d555180");
+        $('.sub_object_underbar').css("left","0%");
+        $('.sub_object1').css("background-color","#fff");
+        $('.sub_object2').css("background-color","#efefef");
+        $('.farminfo1').css("z-index","1");
+        $('.farminfo2').css("z-index","0");
+    })
+    $('.sub_object2').click(function(){
+        $('.mapBox2').css("z-index","1");
+        $('.mapBox1').css("z-index","0");
+        $('.sub_object1').css("color","#5d555180");
+        $('.sub_object2').css("color","#141514");
+        $('.sub_object_underbar').css("left","50%");
+        $('.sub_object2').css("background-color","#fff");
+        $('.sub_object1').css("background-color","#efefef");
+        $('.farminfo1').css("z-index","0");
+        $('.farminfo2').css("z-index","1");
+    })
 });
