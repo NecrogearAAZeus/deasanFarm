@@ -18,6 +18,9 @@ $(document).ready(function(){
         $(".menu1").children('ul').slideUp(300);
         
     });
+    var iframeWidth = $(".sub2").width()*0.95; 
+    $(".iframe").css("width",iframeWidth);
+
     $('html').click(function(event) {
         const clickedElement = event.target;
         console.log(clickedElement);
