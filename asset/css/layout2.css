@@ -321,7 +321,10 @@
     }
     .contentSubTitle{
         font-size: 1.0rem;
-        margin-top:2rem;
+        padding-bottom:2rem;
+        border-bottom:3px solid #64c588;
+        width:85%;
+        margin:2rem auto;
     }
     .contentText{
         width:93%;
@@ -525,9 +528,9 @@
         
     }
     .footerfont{
-        width:480px;
+        width:90%;
         position:absolute;
-        font-size:0.8rem;
+        font-size:0.7rem;
         line-height: 1.3rem;
         top:50%;
         left:50%;
@@ -578,8 +581,8 @@
     .menu1{
         display:inline-block;
         width:100%;
-        min-height:2.3rem;
-        line-height: 2.2rem;
+        min-height:3.0rem;
+        line-height: 3.0rem;
         position:relative;
         color:#141514;
         cursor:pointer;
@@ -596,9 +599,9 @@
     .menuBox{
         display:inline-block;
         width:100%;
-        min-height:2.3rem;
+        min-height:3.0rem;
         background-color:#eee;
-        line-height: 2.2rem;
+        line-height: 3.0rem;
         border-top:1px solid #8e978e70;
         border-bottom:1px solid #8e978e70;
         text-indent:1rem;
@@ -611,9 +614,9 @@
     .menu2>a{
         position:relative;
         width:100%;
-        height:1.4rem;
+        height:2.5rem;
         background-color:#ecebe8;
-        line-height: 1.4rem;
+        line-height: 2.5rem;
         font-size:0.8rem;
         text-indent:1rem;
         z-index: 10;
@@ -638,15 +641,17 @@
         width:1rem;
         position:absolute;
         right:1rem;
-        top:0.6rem;
-        transform:rotate(90deg);
+        top:0.9rem;
         cursor:pointer;
+        width:1.3rem;
+   
+
     }
     .size2{
         width:0.8rem;
         position:relative;
-        left:0;
-        top:-0.27rem;
+        left:0.2rem;
+        top:-0.8rem;
         cursor:pointer;
   
     }
@@ -654,8 +659,9 @@
         width:1rem;
         position:absolute;
         right:1rem;
-        top:0.6rem;
+        top:0.9rem;
         cursor:pointer;
+        width:1.3rem;
 
     }
     .farminfo1{
