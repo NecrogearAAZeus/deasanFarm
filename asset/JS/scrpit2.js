@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".moblie_button").click(function(){
+    $(".mobile_button").click(function(){
         $(".menu").css("z-index","6");
         $(".accordianWarp").css("display","block");
     });
@@ -26,20 +26,29 @@ $(document).ready(function(){
     $(".menu1").click(function(){
         $(".menu1").children('ul').stop().slideUp(300);
         $(this).children('img').css("transform","rotate(90deg)");
-        $(".menu1").children('img').attr("src","../asset/images/moblie_button3.png");
+        $(".menu1").children('img').attr("src","../asset/images/mobile_button3.png");
         
         
         
 
         if($(this).children('ul').css('display')=="none"){
             $(this).children('ul').slideDown(300);
-            $(this).children('img').attr("src","../asset/images/moblie_button4.png");
+            $(this).children('img').attr("src","../asset/images/mobile_button4.png");
             $(".menu1").children('img').css("transform","rotate(90deg)");
             $(this).children('img').css("transform","rotate(0deg)");
         }
     });
 
- 
+   var scrollheight =  Math.max( $(".wapper").scrollHeight, $(".wapper").offsetHeight, 
+                        window.clientHeight, window.scrollHeight, window.offsetHeight )
+    $(window).resize(function()
+        {setTimeout(function(){
+            $("filter2").css("height")== scrollheight;
+        },100);  
+    })
+    {setTimeout(function(){
+        $("filter2").css("height")== scrollheight;
+    },100)};
 
 
   
