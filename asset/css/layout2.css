@@ -51,19 +51,18 @@
         left:50%;
         z-index:-1;
         transform:translate(-50%,0);
-        width:110%;
         background-size:contain;
         min-height:10rem;
 
     }
     .title_logo{
         position:absolute;
-        top:1rem;
+        top:0.8rem;
         left:1rem;
         z-index:4;
         height:2.2rem;
         cursor:pointer;
-
+        
     }
     .mobile_button{
         position:absolute;
@@ -203,6 +202,9 @@
         border-radius: 20px;
         width:95%;
         margin-bottom:2rem;
+        position:relative;
+        left:50%;
+        transform:translate(-50%,0);
     }
     .sub_texture{
         position:absolute;
@@ -313,6 +315,7 @@
         text-align: center;
         margin-bottom:3rem;
     }
+
     .contentTitle{
         color:#64c588;
         font-size: 1.3rem;
@@ -322,9 +325,9 @@
     .contentSubTitle{
         font-size: 1.0rem;
         padding-bottom:2rem;
-        border-bottom:3px solid #64c588;
+        border-bottom:1px solid #64c588;
         width:85%;
-        margin:2rem auto;
+        margin:2rem auto 2rem;
     }
     .contentText{
         width:93%;
@@ -334,6 +337,8 @@
         left:50%;
         transform: translate(-50%,0);
         line-height: 1.1rem;
+        text-align:left;
+        margin-bottom:2rem;
 
     }
     .contentText>p{
@@ -739,5 +744,4 @@
         line-height:1.1rem;
           
     }
-    
 }   

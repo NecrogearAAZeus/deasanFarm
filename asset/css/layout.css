@@ -4,19 +4,296 @@
     font-weight: normal;
     font-style: normal;
 }
-.wapper{
+
+html{
+    font-size:20px;
+    font-family:gowun-dodum, sans-serif;
+    color:#141514;
+}
+
+.warpper{
     position:relative;
     width:100%;
 
 }
+@media (min-width:769px){
+    html{
+        font-size: 1vw;
+    }
+    .mobile_title_BG, .menuLogo,.mobile_button,.mobile_button2,.fixed{
+        display:none;
+    }
+    .pc_title_BG{
+        position:absolute;
+        bottom:0%;
+        left:50%;
+        z-index:-1;
+        transform:translate(-50%,0%);
+        background-size:contain;
+        display:block;
+        height:1440px;
+    }
+
+    .accordian>li{
+        display:inline-block;
+        color:#fff;
+        position:absolute;
+    }
+    .title_logo{
+        position:absolute;
+        top:0.6rem;
+        left:1rem;
+        z-index:4;
+        height:50px;
+        cursor:pointer;
+
+    }
+    .menu{
+        position:relative;
+        height:100vh;
+        width:100%;
+        overflow:hidden ;
+        z-index:0;
+        
+    }
+    .fixed{
+        display:none;
+    }
+
+    .box1{
+        position:absolute;
+        top:0.7rem;
+        right:26.5rem;
+        z-index: 3;
+        width:8rem;
+        height:1px;
+        background-color:#fff;
+        opacity: 65%;
+
+    }
+    .box2{
+        position:absolute;
+        top:0.7rem;
+        left:26.5rem;
+        z-index: 3;
+        width:8rem;
+        height:1px;
+        background-color:#fff;
+        opacity: 65%;
+
+        
+    }
+    .box3{
+        width:7rem;
+        height:0.2rem;
+        background-color: #64c588;
+        margin: 3rem auto 3rem;
+        opacity:90%;
+    }
+    .latter{
+        position:absolute;
+        width:100%;
+        z-index:3;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align:center;
+        color:  #fff !important;
+
+        
+    }
+    .latter1{
+        position:relative;
+        opacity: 75%;
+        font-size:1.5rem;
+        font-family: kandin, sans-serif;
+        font-weight: 200;
+        font-style: normal;;
+        width:100%;
+        left:50%;
+        transform: translate(-50%,0);
+        letter-spacing: 0.06rem;
+        color:#fff;
+    }
+    .latter2{
+        margin-top:2rem;
+        font-size:4.5rem;
+        font-family: romana-tw, serif;
+        color:#fff;
+        line-height: 5rem;
+    }
+    .latter3{
+        position:relative;
+        opacity: 85%;
+        font-size:2rem;
+        font-family: gowun-dodum, sans-serif;
+        line-height:3rem;
+        width:40rem;
+        left:50%;
+        transform: translate(-50%,0);
+        
+    }
+    .sublatter3-1{
+        position:absolute;
+        left:0%;
+    }
+    .sublatter3-2{
+        position:absolute;
+        right:0%;
+    }
+
+    .main{
+        position:relative;
+        height:100vh;
+        width:100%;
+        overflow:hidden;
+        
+        
+
+    }
+    .icons{
+        position:absolute;
+        top:0.6rem;
+        right:20px;
+        z-index: 2;
+        background-size:cover;
+        height:2.5rem;
+        width:200px;
+        text-align: center;
+        
+
+    }
+    .main_bottom>a>img{
+        height:20px;
+        margin:10px 0;
+        top:0px;
+        position:absolute;
+        
+    }
+    .main_bottom{
+        height:100%;
+        width:100%;
+        position:relative;
+    }
+    .youtube{
+        position:absolute;
+        left:14px;
+    }
+    .instagram{
+        position:absolute;
+        left:50%;
+        transform: translate(-50%,0);
+    }
+    .facebook{
+        position:absolute;
+        right:14px;
+    }
+    .green{
+        display:none;
+        position:relative;
+        z-index: 10;
+    }
+    .green2{
+        display:none;
+    }
+    .menu1,.menu4{
+        cursor:pointer;
+        font-size:16px;
+        
+        position:absolute;
+        width:120px;
+        color:#fff;
+        display:inline-block;
+    }
+    .info{
+        top:1.55rem;
+        left:200px;
+    }
+    .leisure{
+        top:1.55rem;
+        left:320px;
+    }
+    .market{
+        top:1.55rem;
+        left:440px;
+    }
+    .social2{
+        top:1.55rem;
+        left:560px;
+    }
+
+    .pc_size1{
+        position:absolute;
+        top:1px;
+        right:14px;
+        width:14px;
+        opacity:85%;
+    }
+    .short2{
+        right:28px;
+    }
+
+
+    .size1{
+        display:none;
+    }
+    .size3{
+        display:none;
+    }
+    .size2{
+        display:none;
+
+    }
+
+    .menu2{
+        display:block;
+        background-color: #ffffff20;
+        position:relative;
+        padding:7px 10px;
+        top:-11px;
+        border:1px solid white;
+        box-sizing:border-box;
+        display:none;
+        border-radius: 0 0 5px 5px;
+        
+    }
+    .menubox{
+        padding:6px 10px;
+        width:120px;
+        text-align: center;
+        position:relative;
+        font-size: 16px;
+        top:-8px;
+        box-sizing: border-box;
+        transition: color,background-color 0.3s linear;
+
+        
+        
+    }
+    .menu2>a>li{
+        transition: color, background-color 0.3s linear;
+        color:#ffffff;
+        text-align: center;
+        padding:7px 0px;
+        background-color: #64c588;
+        width:100%;
+        border:1px solid red;
+        display:inline-block;
+    }
+    .menu2>a{
+        display:inline-block;
+        width:100%;
+    }
+    .green{
+        position:relative;
+        z-index: 100;
+    }
+}
 
 @media (max-width:768px){
-    *{
-        color:#141514;
-    }
-    html{
-        font-size:20px;
-        font-family:gowun-dodum, sans-serif;
+
+    .pc_size1{
+        display:none;
     }
     .main{
         position:relative;
@@ -36,6 +313,19 @@
         min-width:500px;
         width:100%;
 
+
+    }
+    .headWrap{
+        position:absolute;
+        top:0;
+        left:0;
+        height:10rem;
+        width:100%;
+        overflow: hidden;
+        z-index: 0;
+    }
+    .pc_titile_BG{
+        display:none;
     }
     .headWrap{
         position:absolute;
@@ -54,11 +344,11 @@
         transform:translate(-50%,0);
         width:110%;
         background-size:contain;
-
+        display:block;
     }
     .title_logo{
         position:absolute;
-        top:1rem;
+        top:0.8rem;
         left:1rem;
         z-index:4;
         height:2.2rem;
@@ -211,7 +501,7 @@
         text-align: center;
         color:#64c588;
         font-family: ChosunCentennial;
-        padding: 3rem 0 1.8rem;
+        padding: 1.8rem 0 1.8rem;
         line-height: 1.5em;
 
     }

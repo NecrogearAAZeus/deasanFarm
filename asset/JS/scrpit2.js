@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    // contentsBox 내부 높이
+    var height2 = $(".contentTitle").outerHeight(true)+$(".contentSubTitle").outerHeight(true)
+    +$(".contentText").outerHeight(true)- 60;
+    var height3 = height2 + 580+"px";
+    $(".contentBox2").css("height", height2);
+    $(".sub3").css("height",height3);
+
+    
     $(".mobile_button").click(function(){
         $(".menu").css("z-index","6");
         $(".accordianWarp").css("display","block");
@@ -26,6 +34,9 @@ $(document).ready(function(){
         console.log(clickedElement);
         
     });
+    
+    console.log(height2) 
+
     $(".menu1").click(function(){
         
 
@@ -59,16 +70,21 @@ $(document).ready(function(){
 
   
     $(window).scroll(function()
-    
+        
     {setTimeout(function(){
-        var height1 = $(".main").outerHeight(true);
-        var scrollTop = $(window).scrollTop();
-        if(scrollTop>height1){
-            $(".fixed").fadeIn(300);
-        }else{
-            $(".fixed").fadeOut(300);
-        }
-    },300);});
+        var width = $(window).outerWidth(true);    
+        if(width<769){
+            var height1 = $(".main").outerHeight(true);
+            var scrollTop = $(window).scrollTop();
+            if(scrollTop>height1){
+                $(".fixed").fadeIn(300);
+            }else{
+                $(".fixed").fadeOut(300);
+            }
+        }    
+        
+        },300);
+    });
     $(window).scroll(function()
     
     {setTimeout(function(){

@@ -53,10 +53,10 @@ a {
 }
 ::selection{
     background-color: transparent;
-    color:#dadeec;
+    color:#fff;
 }
 a:visited, a:link{
-    color:#dadeec;
+    color:#fff;
     text-decoration:none;
 }
 ul{
