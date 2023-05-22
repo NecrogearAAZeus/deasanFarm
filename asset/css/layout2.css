@@ -26,6 +26,7 @@
         
 
     }
+
     .mobile_title_BG{
         position:absolute;
         top:50%;
@@ -62,7 +63,7 @@
         z-index:4;
         height:2.2rem;
         cursor:pointer;
-        
+
     }
     .mobile_button{
         position:absolute;
@@ -206,6 +207,7 @@
         left:50%;
         transform:translate(-50%,0);
     }
+ 
     .sub_texture{
         position:absolute;
         z-index: -3;
