@@ -536,11 +536,10 @@ html{
     }
     .footerlogo{
         position:absolute;
-        left:50%;
+        left:8.3%;
         top:50%;
-        transform: translate(-50%,-50%);
+        transform: translate(0%,-50%);
         width:200px;
-        margin-left:-440px;
     }
     .footerfont{
         width:600px;
@@ -553,15 +552,21 @@ html{
         line-height: 15px;
     }
     .box5{
+        width:1px;
+        height:10px;
+        background-color:#141514;
+        z-index: 3;
         display:inline-block;
-        width:20px;
+        margin:0 8px;
+        position:relative;
+        top:-3px;
+        
     }
     .social_bottom{
         position: absolute;
         top:50%;
-        right:50%;
-        transform: translate(50%,-50%);
-        margin-right:-420px;
+        right:8.3%;
+        transform: translate(0,-50%);
         width:300px;
         height:100px;
 
@@ -992,7 +997,7 @@ html{
         
     }
     .social_bottom{
-        height:73%;
+        height:50%;
         width:100%;
         position:relative;
         top:25.5rem;

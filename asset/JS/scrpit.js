@@ -126,17 +126,20 @@ $(document).ready(function(){
                 $(".menuBox").css("width","100px");
                 $(".sub_text").css("width","88.5%");
                 $(".footerfont").css({
-                    "left":"60%",
-                    "width":"350px"
+                    "left":"50%",
+                    "width":"400px",
+                    "transform":"translate(0%,-50%)"
                 });
                 
                 $(".footerlogo").css({
                     "top":"40%",
-                    "margin-left":"-220px"
+                    "left":"8.3%",
+                    "margin-left":"50px"
                 });
                 $(".social_bottom").css({
                     "top":"75%",
-                    "margin-right":"220px"
+                    "right":"91.7%",
+                    "margin-right":"-300px"
                 });
             };
             if(width>1200){
@@ -149,15 +152,18 @@ $(document).ready(function(){
                 $(".sub_text").css("width","75%");
                 $(".footerfont").css({
                     "left":"50%",
-                    "width":"600px"
+                    "width":"600px",
+                    "transform":"translate(-50%,-50%)"
                 });
                 $(".footerlogo").css({
                     "top":"50%",
-                    "margin-left":"-440px"
+                    "left":"8.3%",
+                    "margin-left":"0px"
                 });
                 $(".social_bottom").css({
                     "top":"50%",
-                    "margin-right":"-420px"
+                    "right":"8.3%",
+                    "margin-right":"0px"
                 });
             };
             
@@ -205,10 +211,6 @@ $(document).ready(function(){
                 $(".menu1,.menu4").css(
                     "color","#141514"
                 )
-                $(".social_bottom").css({
-                    "top":"25.5rem",
-                    "margin-right":"220px"
-                });
                 $(".footerlogo").css({
                     "top":"11%",
                     "margin-left":"0",
@@ -216,8 +218,10 @@ $(document).ready(function(){
                     "left":"50%"
                 });
                 $(".footerfont").css({
+                    "top":"50%",
                     "left":"50%",
-                    "width":"350px"
+                    "width":"350px",
+                    "transform":"translate(-50%,0)"
                 });
                 $(".social_bottom").css({
                     "height":"73%",
@@ -351,16 +355,19 @@ $(document).ready(function(){
         $(".menuBox").css("width","100px");
         $(".sub_text").css("width","75%");
         $(".footerfont").css({
-            "left":"60%",
-            "width":"350px"
+            "left":"50%",
+            "width":"400px",
+            "transform":"translate(0%,-50%)"
         });
         $(".footerlogo").css({
             "top":"40%",
-            "margin-left":"-220px"
+            "left":"8.3%",
+            "margin-left":"50px"
         });
         $(".social_bottom").css({
             "top":"75%",
-            "margin-right":"220px"
+            "right":"91.7%",
+            "margin-right":"-300px"
         });
     }
     if(width>1200){
