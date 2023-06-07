@@ -879,6 +879,7 @@ html{
 
     }
     .fSub_title{
+        width:350px;
         position:absolute;
         font-family:ChosunCentennial ;
         font-size:2.2rem;
@@ -886,6 +887,7 @@ html{
         transform:translate(-50%,0);
         top:33%;
         color:#fff;
+        text-align: center;
     }
     .box4{
         position: absolute;
