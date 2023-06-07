@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-   
+    var width = $(window).outerWidth(true);
     if(width>2560){
         $(".pc_title_BG").css("width","100%");
     }
@@ -11,6 +11,7 @@ $(document).ready(function(){
         console.log(click);
         
     });
+
     $(".menu1,.menu4").mouseover(function(){
         if(width>768){
             $(this).children('ul').stop().fadeIn(300,'linear').css({
@@ -30,7 +31,7 @@ $(document).ready(function(){
             $(this).children(".white").stop().fadeIn(300,'linear');
             $('.menu4').children('div').css("border-radius","5px 5px 5px 5px");
 
-            $(this).css("color","#56e28a");
+            $(this).css("color","#92d081");
         }
         
 
@@ -167,17 +168,7 @@ $(document).ready(function(){
                 });
             };
             
-            if(768<width && width<900){
-                $('html').css("font-size","10px");
 
-            };
-            if(width>900 && width<=1300){
-                $('html').css("font-size"," 1vw");
-
-            };
-            if(width>1300){
-                $('html').css("font-size"," 16px")
-            }
             if(width<=768){
                 $('html').css("font-size","20px");
                 $(".box1").css("right","0rem");
@@ -192,9 +183,9 @@ $(document).ready(function(){
                 $(".menuBox").css({
                     "display":"inline-block",
                     "width":"100%",
-                    "height":"3.0rem",
+                    "height":"60px",
                     "background-color":"#eee",
-                    "line-height": "3.0rem",
+                    "line-height": "60px",
                     "border-top":"1px solid #8e978e70",
                     "border-bottom":"1px solid #8e978e70",
                     "text-indent":"1rem",
@@ -250,8 +241,8 @@ $(document).ready(function(){
                 });
             }else{
 
-                $(".box1").css("right","1rem");
-                $(".box2").css("left","1rem");
+                $(".box1").css("right","0px");
+                $(".box2").css("left","0px");
                 $(".menu").css("z-index","1");
                 $(".accordianWarp").css("display","block");
                 $(".menuBox").css({
@@ -282,7 +273,7 @@ $(document).ready(function(){
 
            
         },100);
-
+``
     });
     
     if(Vh>1560){

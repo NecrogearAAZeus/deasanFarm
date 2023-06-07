@@ -92,21 +92,20 @@ html{
 
     .box1{
         position:absolute;
-        top:0.7rem;
-        right:1rem;
+        top:1rem;
+        right:0;
         z-index: 3;
-        width:8rem;
+        width:100px;
         height:1px;
         background-color:#eee;
         opacity: 65%;
-
     }
     .box2{
         position:absolute;
-        top:0.7rem;
-        left:1rem;
+        top:1rem;
+        left:0;
         z-index: 3;
-        width:8rem;
+        width:100px;
         height:1px;
         background-color:#eee;
         opacity: 65%;
@@ -114,12 +113,12 @@ html{
         
     }
     .box3{
-        width:7rem;
+        width:100px;
         height:0.2rem;
         min-height:4px;
-        background-color: #64c588;
-        margin: 3rem auto 3rem;
-        opacity:90%;
+        background-color: #92d081;
+        margin: 40px auto 40px;
+        opacity:85%;
     }
     .latter{
         position:absolute;
@@ -130,13 +129,14 @@ html{
         transform: translate(-50%,-50%);
         text-align:center;
         color:  #fff !important;
+        font-size:30px;
  
         
     }
     .latter1{
   
         position:relative;
-        font-size:1.5rem;
+        font-size:20px;
         font-family: kandin, sans-serif;
         font-weight: 200;
         font-style: normal;
@@ -144,26 +144,26 @@ html{
         transform: translate(-50%,0);
         letter-spacing: 0.06rem;
         color:#eee;
-        width:50rem;
+        width:600px;
      
        }
     .latter2{
 
         margin-top:2rem;
-        font-size:4.5rem;
+        font-size:60px;
         font-family: romana-tw, serif;
         color:#fff;
-        line-height: 5rem;
+        line-height: 65px;
         position:relative;
 
     }
     .latter3{
         position:relative;
   
-        font-size:2rem;
+        font-size:24px;
         font-family: gowun-dodum, sans-serif;
         line-height:3rem;
-        width:40rem;
+        width:480px;
         left:50%;
         transform: translate(-50%,0);
 
@@ -314,7 +314,7 @@ html{
         font-size:14px;
     }
     .menu2>a>li:hover{
-        color:#56e28a;
+        color:#92d081;
         background-color:#ffffff50;
     }
     .menu2>a{
@@ -359,7 +359,7 @@ html{
         left:50%;
         transform:translate(-50%,0);
         font-size:24px;
-        color:#64c588;
+        color:#92d081;
         margin-bottom:40px;
     }
     .sub_text>.M_hidden{
@@ -367,7 +367,7 @@ html{
         right:50%;
         transform:translate(50%,0);
         font-size: 18px;
-        line-height: 25px;
+        line-height: 27px;
     }
     .farm1{
         position:relative;
@@ -416,7 +416,7 @@ html{
         position:absolute;
         left:50%;
         transform: translate(-50%,0);
-        top:68%;
+        top:65.5%;
         font-size:20px;
     }
     
@@ -468,7 +468,7 @@ html{
         position:absolute;
         left:50%;
         transform: translate(-50%,0);
-        top:68%;
+        top:65.5%;
         font-size:20px;
     }
     .filter{
@@ -523,7 +523,7 @@ html{
         position:absolute;
         left:50%;
         transform: translate(-50%,0);
-        top:68%;
+        top:65.5%;
         font-size:20px;
     }
     .footer{
@@ -542,14 +542,13 @@ html{
         width:200px;
     }
     .footerfont{
-        width:600px;
+        width:660px;
         position:absolute;
         left:50%;
         top:50%;
         transform: translate(-50%,-50%);
         font-size:14px;
         text-align: left;
-        line-height: 15px;
     }
     .box5{
         width:1px;
@@ -559,7 +558,7 @@ html{
         display:inline-block;
         margin:0 8px;
         position:relative;
-        top:-3px;
+        top:-5px;
         
     }
     .social_bottom{
@@ -685,8 +684,8 @@ html{
         right:0.6rem;
         height:1.5rem;
         cursor:pointer;
-        border:8px solid #64c588;
-        background-color: #64c588;
+        border:8px solid #92d081;
+        background-color: #92d081;
         border-radius:5px;
         box-sizing: content-box;
         z-index: 5;
@@ -756,9 +755,9 @@ html{
     .box3{
         width:5rem;
         height:0.09rem;
-        background-color: #64c588;
+        background-color: #92d081;
         margin: 7% auto 7%;
-        opacity:90%;
+        opacity:85%;
     }
     .latter3{
         opacity: 90%;
@@ -829,7 +828,7 @@ html{
     .sub_title{
         font-size:1.2rem;
         text-align: center;
-        color:#64c588;
+        color:#92d081;
         font-family: ChosunCentennial;
         padding: 1.8rem 0 1.8rem;
         line-height: 1.5em;
@@ -946,7 +945,7 @@ html{
     
     }
     .fParagraph3{
-        color:#64c588;
+        color:#92d081;
         text-align: center;
         opacity: 80%;
 
@@ -1007,9 +1006,10 @@ html{
         background-color:#efefef;
         text-align: center;
         width:100%;
-        height:20rem;
+        height:25rem;
         position:relative;
         z-index: 4;
+        box-sizing: content-box;
         
     }
     .footerlogo{
@@ -1036,7 +1036,7 @@ html{
         position:absolute;
         font-size:0.7rem;
         line-height: 1.3rem;
-        top:50%;
+        top:45%;
         left:50%;
         transform:translate(-50%,0);
     }
@@ -1054,7 +1054,7 @@ html{
     }
     .menuhead{
         height:4.0rem;
-        background-color: #64c588;
+        background-color: #92d081;
         width:100%;
         position:absolute;
         box-shadow:0px 3px 3px rgba(20,21,20,0.2);
