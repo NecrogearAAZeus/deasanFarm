@@ -711,6 +711,7 @@ html{
         height:1px;
         background-color:#fff;
         opacity: 65%;
+        display:none;
 
     }
     .box2{
@@ -722,6 +723,7 @@ html{
         height:1px;
         background-color:#fff;
         opacity: 65%;
+        display:none;
 
 
     }
@@ -741,7 +743,7 @@ html{
     }
     .latter2{
         margin-top:8%;
-        font-size:1.5rem;
+        font-size:1.3rem;
         font-family: romana-tw, serif;
         color:#fff;
     }
