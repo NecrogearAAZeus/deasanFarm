@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+    var farmheight = $(".farm3").height();
     var width = $(window).outerWidth(true);
     if(width>2560){
         $(".pc_title_BG").css("width","100%");
@@ -215,7 +215,8 @@ $(document).ready(function(){
                     "transform":"translate(-50%,0)"
                 });
                 $(".social_bottom").css({
-                    "width":"100%",
+                    "width":"83.4%",
+                    "right":"0",
                     "position":"relative",
                     "top":"25.5rem",
                     "opacity":"90%",
@@ -238,12 +239,14 @@ $(document).ready(function(){
                     "opacity":"1",
                     "bottom":"0"
                 });
+                $(".farmSocial").css("height",farmheight+190);
             }else{
 
                 $(".box1").css("right","0px");
                 $(".box2").css("left","0px");
                 $(".menu").css("z-index","1");
                 $(".accordianWarp").css("display","block");
+                $(".farmSocial").css("height","auto");
                 $(".menuBox").css({
                     "padding":"6px 10px",
 
@@ -297,6 +300,7 @@ $(document).ready(function(){
                             "opacity":"0%",
                             "bottom":"-50px"
         }).delay(1000).animate({opacity:0.85,bottom:"0px"},500);
+ 
     }
     if(768<width && width<900){
         $('html').css("font-size","10px");
@@ -309,6 +313,7 @@ $(document).ready(function(){
         $(".menuBox").css(
             "width","100%"
         );
+        $(".farmSocial").css("height",farmheight+190);
 
     }else{
         $(".sub_title2").css({
@@ -319,6 +324,7 @@ $(document).ready(function(){
             "opacity":"0%",
             "right":"40%"
         });
+        $(".farmSocial").css("height","auto");
         $(".farming_animation").css({
             "opacity":"0%",
             "bottom":"-50px"

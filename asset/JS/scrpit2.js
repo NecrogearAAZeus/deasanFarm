@@ -110,7 +110,9 @@ $(document).ready(function(){
             console.log(width);
             $(".filter2").css("height") ===scrollheight;
             height4 = $(".sub_object1").outerHeight(true)+$(".mapBox1").outerHeight(true)+$(".farminfo1").outerHeight(true)+130;
-            contenthoney = $(".imgwarp").height() +160;
+            if(width>768){
+                contenthoney = $(".imgwarp").height() +160;
+            }
             if(Vh>1560){
                 $(".pc_title_BG").css({
                     "width":"auto",
@@ -238,6 +240,7 @@ $(document).ready(function(){
                 });
                 $(".social_bottom").css({
                     "width":"100%",
+                    "right":"0",
                     "position":"relative",
                     "top":"25.5rem",
                     "opacity":"90%",
@@ -260,6 +263,7 @@ $(document).ready(function(){
                     "opacity":"1",
                     "bottom":"0"
                 });
+                $(".farmSocial").css("height",farmheight+190);
                 $(".intro_animation1,.intro_animation2,.intro_animation3").css({
                     "opacity" : "1",
                     "margin-top":"0"
@@ -282,6 +286,7 @@ $(document).ready(function(){
                 $(".box2").css("left","4rem");
                 $(".menu").css("z-index","1");
                 $(".accordianWarp").css("display","block");
+                $(".farmSocial").css("height","auto");
                 $(".menuBox").css({
                     "padding":"6px 10px",
                     "height":"32px",
@@ -322,7 +327,10 @@ $(document).ready(function(){
                         })
         .animate({opacity:1,top:"50%"},500);
         $(".imgwarp").css("height",height5);
+        $(".farmSocial").css("height",farmheight+190);
 
+    }else{
+        $(".farmSocial").css("height","auto");
     }
     if(width<1200 && width>768){
         $(".info").css("left","180px");
@@ -444,7 +452,7 @@ $(document).ready(function(){
                     $(".fixed").fadeIn(300);
                 }else{
                     
-                    $(".imgwarp").css("height",height5);
+                    
 
                     $(".fixed").fadeOut(300);
                 }
@@ -458,6 +466,7 @@ $(document).ready(function(){
                     $(".intro_animation2,.honey_animation2").delay(500).animate({
                             opacity:1,top:"20"
                     },500);
+                    $(".imgwarp").css("height",height5);
                     }
                     if(scrollTop>=800){
                         $(".intro_animation3").animate({
