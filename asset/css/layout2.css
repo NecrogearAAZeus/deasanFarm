@@ -1596,10 +1596,11 @@ html{
         background-color:#efefef;
         text-align: center;
         width:100%;
-        height:25rem;
+        height:400px;
         position:relative;
         z-index: 4;
         box-sizing: content-box;
+        margin-top:100px;
     }
     .footerlogo{
         position:absolute;

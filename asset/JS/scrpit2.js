@@ -237,7 +237,6 @@ $(document).ready(function(){
                     "transform":"translate(-50%,0)"
                 });
                 $(".social_bottom").css({
-                    "height":"73%",
                     "width":"100%",
                     "position":"relative",
                     "top":"25.5rem",
