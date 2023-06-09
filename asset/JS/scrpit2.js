@@ -7,7 +7,7 @@ $(document).ready(function(){
     var height4 = $(".sub_object1").outerHeight(true)+$(".mapBox1").outerHeight(true)+$(".farminfo1").outerHeight(true)+130;
     var height5 = $(".textWarp").height();
     var width = $(window).outerWidth(true);
- 
+    
     if(width>1750){
         $(".pc_img").css({
             "width":"100%"
@@ -61,7 +61,13 @@ $(document).ready(function(){
 
 
     });
-    
+    $(".location_warp").children("img").click(function(){
+        var locationCopy = $(this).next("input").val();
+        navigator.clipboard.writeText(locationCopy)
+            .then(function(){
+                alert("주소가 복사되었습니다.")
+            });
+    });
     $(".menu1").click(function(){
         if(width<=768){
             $(".menu1").children('ul').stop().slideUp(300);

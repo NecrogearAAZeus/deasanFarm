@@ -1062,6 +1062,14 @@ html{
         opacity: 0;
         margin-top:-20px;
     }
+    .location{
+        height:20px;
+        position:relative;
+        padding : 8.5px 8px;
+        box-sizing: content-box;
+        cursor:pointer;
+
+    }
 }
 
 @media (max-width:768px){
@@ -1889,5 +1897,13 @@ html{
     }
     .intro_Text_2{
         margin:40px 0;
+    }
+      .location{
+        height:20px;
+        position:relative;
+        padding : 6px 8px;
+        box-sizing: content-box;
+        cursor:pointer;
+
     }
 }   
