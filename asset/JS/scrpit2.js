@@ -1,5 +1,6 @@
 $(document).ready(function(){
     // contentsBox 내부 높이
+    var farmheight = $(".farm3").height();
     var height2 = $(".contentTitle").outerHeight(true)+$(".contentSubTitle").outerHeight(true)
     +$(".contentText").outerHeight(true)- 60;
     var height3 = height2 + 580+"px";
